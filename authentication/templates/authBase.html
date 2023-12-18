@@ -1,0 +1,137 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>EDAS Consulting Services</title>
+    <!-- css link  -->
+    <link rel="stylesheet" href="{% static 'Styles/auth5.css' %}">
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <!-- high quality Boxicons from boxicons.com -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- sweat alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="auth-header">
+        <div class="edasMain__authLogo pvwg-auth-logo">
+            <a href="{% url 'home' %}">
+                <figure class="header__authNav header__leftLogo">
+                    <img src="{% static 'media/logoImages/edasNavLogoU.png' %}" alt="edas logo" title="" width="130" height="130">
+                </figure>
+            </a>
+        </div>
+        <nav class="auth-header-nav">
+            <ul class="auth-header-nav-ul authHeader__nav__ul">
+                <li {% if request.path == '/aboutus' %}class="active"{% endif %}>
+                    <a href="{% url 'home' %}">About </a>
+                </li>
+                <li {% if request.path == '/ourservices' %}class="active"{% endif %}>
+                    <a href="{% url 'home' %}">Services </a>
+                </li>
+                <li {% if request.path == '/careermanagement' %}class="active"{% endif %}>
+                    <a href="{% url 'home' %}" >Career Management </a>
+                </li>
+                <li {% if request.path == '/hiring' %}class="active"{% endif %}>
+                    <a href="{% url 'home' %}" >We're hiring </a>
+                </li>
+                <li {% if request.path == '/blog' %}class="active"{% endif %}>
+                    <a href="{% url 'home' %}" >Blog </a>
+                </li>
+                <li {% if request.path == '/contactus' %}class="active"{% endif %}>
+                    <a href="{% url 'home' %}">Contact </a>
+                </li>
+                <li><a href="{% url 'home' %}"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu">
+            <i class='bx bx-menu-alt-right'></i>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main auth start -->
+    <main class="main-auth">
+        {% block content %}
+      
+        Replace Me
+       
+        {% endblock %}
+    </main>
+    <!-- Main auth end -->
+
+    <!-- Footer start -->
+    <footer class="footer__container">
+        <section class="auth__Footer">
+            <div class="social__media footer__item">
+                <h3>Follow us</h3>
+                <ul  class="footer__ul">
+                    <li><a href="https://twitter.com/edasconsulting"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://ke.linkedin.com/company/edasconsulting"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/edasconsulting"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>            
+            </div>
+            <div class="office__location footer__item">
+                <h3>Contact Us</h3>
+                <ul  class="footer__ul" >
+                    <li><a href="#"><i class="fas fa-envelope"></i> info@edasconsulting.co.ke</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Ruaraka, Nairobi 00100</a></li>
+                    <li><a href="tel:+254754999339"><i class="fas fa-phone"></i> +254 754 999 339</a></li>
+                    <li><a href="#"><i class="far fa-clock"></i> Mon-Fri 9am-7pm</a></li>
+                </ul>                
+            </div>
+            <div class="quick__links footer__item">
+                <h3>Quick Links</h3>
+                <ul class="footer__ul">
+                    <li><a href="#">HR Consulting</a></li>
+                    <li><a href="#">HR Advisory</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Labour Management</a></li>
+                </ul>                
+            </div> 
+            <div class="footer__info footer__item">
+                <div class="copyright">
+                    <p>&copy; 2023 EDAS Consulting Services.</p>
+                    <p>All rights reserved.</p>
+                    <div class="floatleft">
+                        <a href="{% url 'home' %}">
+                            <figure class="logofooter">
+                                <img src="{% static 'media/logoImages/edasNavLogoU.png' %}" alt="edas logo" title="" width="130" height="130">
+                            </figure>
+                        </a>
+                    </div>
+                </div> 
+                <div class="horizontal-line"></div> <br>
+                <div class="websiteby"> 
+                    <br><p>Website by</p> 
+                    <div class="text-logo-builder">
+                        <a href="https://hamiscodecraft.co.ke">
+                            <span class="FI">Ka<span class="LI">tana</span>.</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>       
+    </footer>
+    <small class="footer__small">
+        <a href="#">www.edasconsulting.co.ke </a> 
+        <strong> | </strong> 
+        <span> Client satisfaction is our priority.</span>
+    </small>
+    <!-- Footer end -->
+
+
+    <script src="../../static/JavaScript/main4.js"></script>
+</body>
+</html>

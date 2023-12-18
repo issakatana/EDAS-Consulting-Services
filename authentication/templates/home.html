@@ -1,0 +1,181 @@
+{% extends 'authBase.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<!-- welcome home start -->
+<section class="changehome">
+    <article class="navbars">
+        <div class="introdiv">
+            <h1 class="hidden-content hh">Welcome To EDAS Careers Network.</h1>
+            <p class="hidden-content para">We are a progressive human resource consultancy firm committed to offering simplified solutions to complex HR issues. We are driven by a desire to exceed the expectations of our clients in whichever assignment we undertake; big or small.</p>
+        </div>
+        <div class="home-welcome-btn">
+            <a href="{% url 'home' %}">LEARN MORE</a>
+        </div> 
+    </article>
+</section>
+<!-- welcome home end -->
+
+
+<!-- who we are start -->
+<section class="who-we-are">
+    <h1>Who we are</h1>
+    <div class="whoweareIntro">
+        <p>At EDAS Consulting Services, we pride ourselves in offering comprehensive career management services designed to help individuals navigate their professional journey with confidence and success. We understand that building a fulfilling and prosperous career requires a strategic approach, and that's why we offer a range of services tailored to meet the unique needs of each client..</p>
+    </div> 
+    <div class="who-we-are-btn">
+        <a href="{% url 'home' %}">LEARN ABOUT US</a>
+    </div> 
+</section> 
+<!-- who we are end -->
+
+
+<!-- vision, mission and values start -->
+<section class="values-vision">
+   <div class="values-vission-contents">
+        <div class="overlay1 vvc">
+            <div class="blue-overlay">
+                <h2 class="vvch2">Our Vision</h2>
+                <p>To be the HR consultancy firm of choice to individuals and organizations for world-class 
+                    human resource management solutions.</p>
+            </div>
+        </div>
+        <div class="overlay2 vvc">
+            <div class="red-overlay">
+                <h2  class="vvch2">Our Mission</h2>
+                <p>To ease business growth by offering our clients’ a one point of contact for all of their
+                    Human Resource needs, thus allowing them to concentrate on their core competencies.</p>
+            </div>
+        </div>
+        <div class="value vvc">
+            <div class="black-overlay">
+                <h2  class="vvch2">Our Core Values</h2>
+                <p><strong>Service Excellence</strong> - We endeavor to deliver quality and laudable outputs</p>
+                <p><strong>Dependability</strong>- We commit to do what we say and remain accountable</p>
+                <p><strong>Integrity</strong> - We uphold the value of sincerity, truthfulness, and honesty</p>
+                <p><strong>Efficiency</strong> - We strive to always produce the intended results</p>
+            </div>
+        </div>
+   </div>
+</section>   
+<!-- vision, mission and values end -->
+
+
+<!-- what we do start  -->
+<section class="what-we-do">
+    <h1>What we do</h1>
+    <div class="what-we-do-contents">
+        <div class="aspirational-statement team">
+            <div class="text1">
+                <h2>Empowering organizations through HR excellence</h2>
+                <p>Our goal is to provide strategic HR solutions that empower your organization to excel. 
+                    We offer expertise and guidance to help you achieve HR excellence, ensuring that 
+                    your human resources practices align with your overall business objectives. 
+                    By partnering with us, you can expect comprehensive support and solutions tailored to 
+                    your specific needs, ultimately driving your organization towards success.</p>
+            </div>
+            <figure class="team__image">
+                <img src="../../static/media/bgImages/labor_relations_specialist.jpg" alt="Processing image">
+            </figure>
+        </div>
+        <div class="aspirational-statement team">
+            <figure class="team__image">
+                <img src="../../static/media/bgImages/hrEmpl.png" alt="Processing image">
+              </figure>
+            <div class="text1">
+                <h2>Partnering with you to achieve HR brilliance.</h2>
+                <p>We are here to guide you on your path to HR brilliance. As your trusted partner, 
+                    we work closely with you to understand your unique challenges and goals. Our team 
+                    of experts will provide personalized support, helping you navigate complex HR issues
+                    and develop effective strategies. Together, we will strive for excellence in all aspects
+                    of HR management, unlocking the full potential of your organization.</p>
+            </div>
+        </div>
+        <div class="aspirational-statement team" id="pushdown">
+            <div class="text1" >
+                <h2>Inspiring individuals and teams to thrive through comprehensive training.</h2>
+                <p>Our comprehensive training programs are designed to unlock the potential of your
+                    employees and teams. We believe in inspiring growth and development through 
+                    targeted learning experiences. By participating in our training initiatives, 
+                    your employees will acquire valuable skills and knowledge that will empower them 
+                    to thrive in their roles. We are committed to equipping individuals with the tools 
+                    they need to reach their full potential and drive your organization forward.</p>
+            </div>
+            <figure class="team__image">
+                <img src="../../static/media/bgImages/inspiring.jpg" alt="Processing image">
+            </figure>
+        </div>
+        <div class="aspirational-statement team">
+            <figure class="team__image">
+                <img src="../../static/media/bgImages/51.jpg" alt="Processing image">
+              </figure>
+            <div class="text1">
+                <h2>Optimizing labor management for organizational success.</h2>
+                <p>We understand the importance of efficient labor management for organizational success.
+                    Our focus is on streamlining processes, improving efficiency, and fostering harmonious
+                    work environments. By optimizing your labor management practices, we help you maximize productivity,
+                    enhance employee satisfaction, and achieve overall success. Our expertise in labor management will guide you 
+                    towards effective resource allocation and utilization, ensuring your organization operates at its best.</p>
+            </div>
+        </div>
+    </div>
+</section> 
+<!-- what we do end -->
+
+
+<!-- our services start -->
+<section class="our-services">
+    <h1>Our Services</h1>
+    <div class="ourserv__items">
+        <div class="service">
+            <i class="fas fa-search service-icon"></i>
+            <h2>Posting of available job opportunities.</h2>
+        </div>
+        <div class="service">
+            <i class="fas fa-file-alt service-icon"></i>
+            <h2>Assistance with CV drafting/review.</h2>
+        </div>
+        <div class="service">
+            <i class="fas fa-envelope service-icon"></i>
+            <h2>Assistance with cover letter drafting/review.</h2>
+        </div>
+        <div class="service">
+            <i class="fas fa-microphone service-icon"></i>
+            <h2>Assistance with interview preparations.</h2>
+        </div>
+        <div class="service">
+            <i class="fas fa-compass service-icon"></i>
+            <h2>Advice on career choices and progression.</h2>
+        </div>
+        <div class="service">
+            <i class="fas fa-bullseye service-icon"></i>
+            <h2>Personal branding.</h2>
+        </div>
+        <div class="service">
+            <i class="fab fa-linkedin service-icon"></i>
+            <h2>LinkedIn profile revamp.</h2>
+        </div>
+        <div class="service">
+            <i class="fas fa-handshake service-icon"></i>
+            <h2>Recruitment and placement services.</h2>
+        </div>
+    </div>  
+    <div class="our-services-btn"><a href="#">LEARN MORE</a></div>    
+</section> 
+<!-- our services end -->
+
+
+<!-- help you start -->
+<section class="help-you">
+    <div class="help-you-content">
+        <h3 class="text-transform">How can we help you?</h3>
+        <div class="contact-us-btn "><a href="{% url 'home' %}">CONTACT US </a></div>
+    </div>
+</section>
+<!-- help you end -->
+
+
+{% endblock %}
