@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+
+
 def home(request):
 
     context = {
@@ -7,3 +9,12 @@ def home(request):
     }
 
     return render(request, 'home.html', context)
+
+
+def contact(request):
+
+    context = {
+        
+    }
+
+    return render(request, 'contact.html', context)

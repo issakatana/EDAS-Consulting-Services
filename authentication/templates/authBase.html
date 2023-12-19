@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <title>EDAS Consulting Services</title>
     <!-- css link  -->
-    <link rel="stylesheet" href="{% static 'Styles/auth5.css' %}">
+    <link rel="stylesheet" href="{% static 'Styles/auth12.css' %}">
     <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
     <!-- high quality Boxicons from boxicons.com -->
@@ -49,7 +49,7 @@
                     <a href="{% url 'home' %}" >Blog </a>
                 </li>
                 <li {% if request.path == '/contactus' %}class="active"{% endif %}>
-                    <a href="{% url 'home' %}">Contact </a>
+                    <a href="{% url 'contact' %}">Contact </a>
                 </li>
                 <li><a href="{% url 'home' %}"><i class="fa fa-search" aria-hidden="true"></i></a></li>
             </ul>
