@@ -561,6 +561,243 @@ a {
 /* houw can we help you end */
 
 
+/* ABOUT US PAGE START */
+.aboutUs__Page {
+    background-image: none;
+    padding: 7vw 0 5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/jobsearchh.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.aboutUs__Page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background-color:#f68635;
+    opacity: 0.5;
+}
+.aboutUs__Page h1 {
+    z-index: 1;
+    font-size: 2.5rem;
+    color: var(--FONT-COLOR1);
+}
+
+
+.ourstory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 3vw 4vw;
+}
+.ourstory h1 {
+    color: var(--FONT-COLOR2);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.ourstory-content {
+    display: grid;
+    place-items: center;
+    gap: 1vw;
+    width: 100%;
+    --min-column-size: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+
+}
+.ourstory__image {
+    flex-basis: 50%;
+}
+.clearfix {
+    flex-basis: 40%;
+}
+
+
+.wearehere__andwhy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 7vw 4vw;
+    position: relative;
+    background-image:url(../../static/media/bgImages/nairobi.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.wearehere_andwhy_contents {
+    display: grid;
+    place-items: center;
+    gap: .8rem;
+    --min-column-size: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr)); 
+    position: relative;
+    gap: 30px;
+    background-size: cover;
+    background-position: center;
+}
+.wearehere__andwhy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--FONT-COLOR2);
+    opacity: 0.7;
+}
+.vvc {
+    z-index: 1;
+}
+.vvch2 {
+    color: var(--BORDER-COLOR);
+    text-align: center;
+    padding-bottom: 2vw;
+}
+.vvc p {
+    color: whitesmoke;
+    line-height: 1.5;
+}
+.vvc:nth-child(1){
+    flex-basis: 20%;
+}
+.vvc:nth-child(2){
+    flex-basis: 20%;
+}
+.vvc:nth-child(2){
+    flex-basis: 30%;
+}
+
+
+.our__approach {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 3vw 4vw;
+}
+.our__approach  h1 {
+    color: var(--FONT-COLOR2);
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 2vw;
+}
+.our-approach-content {
+    display: grid;
+    place-items: center;
+    gap: 1vw;
+    width: 100%;
+    --min-column-size: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+}
+.ourapproach-btn {
+    padding: 4vw 4vw 0 4vw;
+}
+.ourapproach-btn a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 2px;
+    color: var(--FONT-COLOR1);
+    font-weight: bold;
+    background: var(--FONT-COLOR2);
+    border: 1px solid var(--FONT-COLOR2);
+ }
+ .ourapproach a:hover {
+    background: #706e6e;
+ }
+@media screen and (max-width:720px) {
+    .ourstory {
+        padding: 5vw 6vw;
+    }
+    .ourapproach-btn {
+        padding: 7vw;
+    }
+}
+
+
+.meetTeam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: whitesmoke;
+    padding: 3vw 4vw;
+}
+.meetTeam h1 {
+    color: var(--FONT-COLOR2);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.meetTeamIntro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15vw;
+}
+.meetTeam__Contents {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 4rem;
+}
+.text1 h2 {
+    color: var(--FONT-COLOR4);
+    font-size: 1.2rem;
+}
+.text1 h3 {
+    color: var(--BORDER-COLOR);
+    font-size: 1rem;
+}
+.team {
+    display: grid;
+    place-items: center;
+    gap: .3rem;
+    --min-column-size: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr)); 
+}
+.team__image {
+    width: 60%;
+}
+.pushedRight {
+    padding-left: 8vw;
+}
+.pushedLeft {
+    padding-right: 8vw;
+}
+@media screen and (max-width:720px) {
+    .meetTeam h1 {
+        margin-bottom: .7rem;
+    }
+    .meetTeamIntro {
+        padding: 0 3vw;
+    }
+    .meetTeamIntro p {
+        text-align: center;
+    }
+    .pushedRight {
+        padding-left: 0;
+    }
+    .pushedLeft {
+        padding-right: 0;
+    }
+    .meetTeamIntro  p {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* ABOUT US PAGE END */
 
 
 /* CONTACT US PAGE START */

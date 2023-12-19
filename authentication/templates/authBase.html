@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <title>EDAS Consulting Services</title>
     <!-- css link  -->
-    <link rel="stylesheet" href="{% static 'Styles/auth12.css' %}">
+    <link rel="stylesheet" href="{% static 'Styles/auth16.css' %}">
     <!-- google fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
     <!-- high quality Boxicons from boxicons.com -->
@@ -34,7 +34,7 @@
         <nav class="auth-header-nav">
             <ul class="auth-header-nav-ul authHeader__nav__ul">
                 <li {% if request.path == '/aboutus' %}class="active"{% endif %}>
-                    <a href="{% url 'home' %}">About </a>
+                    <a href="{% url 'aboutus' %}">About </a>
                 </li>
                 <li {% if request.path == '/ourservices' %}class="active"{% endif %}>
                     <a href="{% url 'home' %}">Services </a>
