@@ -7,7 +7,7 @@ urlpatterns = [
     path('', views.home, name = 'home'),
     path('EDS - Contact Us', views.contact, name = 'contact'),
     path('EDS - About Us', views.aboutus, name = 'aboutus'),
-    path('EDS - Ourservices', views.ourservices, name = 'ourservices'),
+    path('EDS - Ourservices', views.ourservices, name = 'services'),
 
     # algorithms
 ]

@@ -26,7 +26,7 @@ def ourservices(request):
         
     }
 
-    return render(request, 'ourservices.html', context)
+    return render(request, 'services.html', context)
 
 
 def contact(request):
