@@ -5,7 +5,81 @@
 {% block content %}
 
 
+<section class="wearehiring__Page">
+    <div class="form-group-search">
+        <label for="jobSearch">Helping you find your dream Job</label>
+        <div class="search_wrap search_wrap_1">
+            <div class="search_box">
+                <input type="text" class="input" placeholder="Company Name or Job Title...">
+                <div class="btn btn_common">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+
+<!-- Job Posts Start -->
+<main class="jobs__Main grid_layoutDisplay">
+    <section class="job__posts">
+        <h1>Recent Job Posts</h1>
+        <article class="job__posts__Contents destinations_row">
+            <div class="jobs_container item_grid">
+                {% if dests %}
+                    <div class="job_grid">
+                        {% for dest in dests %}
+                            <!-- blogs -->
+                            <div class="job item">
+                                <div class="job_image">
+                                    {% if dest.post_image and dest.post_image.url %}
+                                        <img src="{{ dest.post_image.url }}" alt="">
+                                    {% else %}
+                                        <!-- Display a placeholder image or some default image -->
+                                        <img src="../../static/media/bgImages/blog.jpg" alt="Placeholder">
+                                    {% endif %}
+                                    {% if dest.category == "NGO JOBS" %}
+                                        <div class="spec_offer text-center"><a href="#">Trending</a></div>
+                                    {% endif %}
+                                </div>
+                                <div class="destination_content">
+                                    {% if dest.title %}
+                                        <div class="destination_title"><a href="{{ dest.url }}">{{ dest.title }}</a></div>
+                                    {% endif %}
+                                    <div class="destination_subtitle"><p>{{ dest.content }}</p></div>
+                                    <div class="destination_author_date">
+                                        <div class="destination_author">Author: {% if dest.user %}{{ dest.user }}{% else %}Unknown{% endif %}</div>
+                                        <div class="destination_date">Last Updated | {{ dest.pub_date }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <p style="margin-left:30px">There are no recent Job posts available at the moment...</p>
+                {% endif %}
+            </div>
+        </article>
+    </section>
+
+    <section class="subscribe__jobs">
+        <div class="subscribe__container">
+            <h2>Subscribe to Job Alert</h2>
+            <p>Join our happy subscribers</p>
+            <input type="email" placeholder="Enter your email here!">
+            <li><a href="">Subscribe</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        </div>
+    </section>
+    
+    <section class="google__ads">
+        <i class="fa fa-angle-left googleAdArrow" aria-hidden="true"></i>
+        <div class="ad-container">
+            <p>Ads by Google</p>
+            <a href="">Stop seeing this ad ?</a>
+        </div>
+    </section>
+</main>
+<!-- Job Posts End -->
 
 
 <!-- help you start -->

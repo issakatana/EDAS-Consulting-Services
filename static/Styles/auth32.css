@@ -81,6 +81,12 @@ a {
 .none {
     display: none;
 }
+.justify {
+    text-align: justify;
+}
+.center {
+    text-align: center;
+}
 @media screen and (max-width:720px) { 
   .none {
     display: grid;
@@ -569,7 +575,7 @@ a {
     justify-content: center;
     align-items: center;
     flex: 1;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/gapcoachingreal.jpg);
     background-size: cover;
@@ -581,7 +587,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color:var(--FONT-COLOR2);
     opacity: 0.7;
 }
@@ -742,7 +748,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 15vw;
+    padding: 0 10vw;
+    padding-bottom: 4vw;
+    font-family: var(--FF);
+    font-weight:500;
+}
+.meetTeamIntro p {
+    text-align: center;
 }
 .meetTeam__Contents {
     display: flex;
@@ -758,6 +770,10 @@ a {
 .text1 h3 {
     color: var(--BORDER-COLOR);
     font-size: 1rem;
+    padding-bottom: 2vw;
+}
+.text1 p {
+    text-align: justify;
 }
 .team {
     display: grid;
@@ -768,6 +784,10 @@ a {
 }
 .team__image {
     width: 60%;
+}
+.white {
+    background-color: var(--FONT-COLOR1);
+    width: 100%;
 }
 .pushedRight {
     padding-left: 8vw;
@@ -800,7 +820,7 @@ a {
 
 
 
-/* SERVICES US PAGE START */
+/* SERVICES PAGE START */
 .services__Page {
     background-image: none;
     padding: 7vw 0 5vw 0;
@@ -808,7 +828,7 @@ a {
     justify-content: center;
     align-items: center;
     flex: 1;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/Hrsolutions.webp);
     background-size: cover;
@@ -820,7 +840,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color:var(--FONT-COLOR2);
     opacity: 0.7;
 }
@@ -857,10 +877,10 @@ a {
         padding-bottom: 10vw;
     }
 }
-/* SERVICES US PAGE END */
+/* SERVICES PAGE END */
 
 
-/* CAREER MANAGEMENT US PAGE START */
+/* CAREER MANAGEMENT PAGE START */
 .careerManagement__Page {
     background-image: none;
     padding: 7vw 0 5vw 0;
@@ -868,7 +888,7 @@ a {
     justify-content: center;
     align-items: center;
     flex: 1;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/coaching.jpg);
     background-size: cover;
@@ -880,7 +900,7 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-color:var(--FONT-COLOR2);
     opacity: 0.7;
 }
@@ -928,7 +948,280 @@ a {
         width: 96%;
     }
  } 
-/* CAREER MANAGEMENT US PAGE END */
+/* CAREER MANAGEMENT PAGE END */
+
+
+/* BLOG PAGE START */
+.blog__Page {
+    background-image: none;
+    padding: 7vw 0 5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/blog.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.blog__Page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color:var(--FONT-COLOR2);
+    opacity: 0.7;
+}
+.blog__Page h1 {
+    z-index: 1;
+    font-size: 2.5rem;
+    color: var(--FONT-COLOR1);
+    text-align: center;
+}
+/* BLOG PAGE END */
+
+
+/* WE ARE HIRING PAGE START */
+.wearehiring__Page {
+    background-image: none;
+    padding: 7vw 0 5vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/jobsearch.png);
+    background-size: cover;
+    background-position: center;
+}
+.wearehiring__Page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-color:var(--FONT-COLOR2);
+    opacity: 0.7;
+}
+.form-group-search  {
+    z-index: 1;
+    font-size: 2.2rem;
+    color: var(--FONT-COLOR1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1vw;
+    border-radius: 10px;
+}
+.form-group-search label {
+    font-weight: bold;
+}
+.flex-group-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    position: relative;
+    border: 2px solid black;
+}
+.destinations {
+    height: 100vh;
+}
+.form-group-search {
+    padding: 1rem;
+}
+.search_wrap {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 1rem auto;
+}
+.search_wrap .search_box {
+    position: relative;
+    width: 100%;
+    height: 3.75rem;
+}
+.search_wrap .search_box .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%; 
+    height: 100%;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.1875rem;
+    font-size: 1.125rem;
+}
+.search_wrap .search_box .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%; 
+    height: 100%;
+    background: #7690da;
+    z-index: 1;
+    cursor: pointer;
+}
+.search_wrap .search_box .btn.btn_common .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.25rem;
+}
+.grid_layoutDisplay {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+     "jobPosts subscribe"
+     "jobPosts googleAds"
+    ;
+    height: 100vh;
+    width: 100%;
+    padding: 2vw 3vw;
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+.job__posts {
+    grid-area: jobPosts;
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    flex-flow: column wrap;
+}
+.job__posts h1 {
+    color: var(--FONT-COLOR2);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.subscribe__jobs {
+    grid-area: subscribe;
+    width: 100%;
+    padding: 1vw;
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/jobalert.webp);
+    background-size: cover;
+    background-position: center;
+}
+.subscribe__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 100%;
+}
+.subscribe__container h2 {
+    position: relative;
+}
+.subscribe__container h2::after {
+    content: "";
+    display: block;
+    width: 50px; 
+    height: 8px; 
+    background-color: var(--FONT-COLOR2);
+    position: absolute;
+    bottom: -2px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.subscribe__container p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+}
+.subscribe__container li {
+    list-style-type: none;
+    background: #000;
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.subscribe__container li a {
+    text-decoration: none;
+    color: var(--FONT-COLOR1);
+}
+.subscribe__container li i {
+    color: var(--FONT-COLOR1);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.subscribe__container input {
+    padding: 1vw;
+}
+.google__ads {
+    grid-area: googleAds;
+    width: 100%;
+    padding: 1vw;
+    background-size: cover;
+    background-position: center;
+}
+.ad-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 80%;
+}
+.ad-container a {
+    padding: 1vw;
+    background-color: #00d0ff;
+    color: var(--FONT-COLOR1);
+}
+.googleAdArrow {
+   margin-top: 3vw;
+}
+@media screen and (max-width: 768px) {
+    .search_wrap .search_box .input {
+        width: 80%;
+    }
+    .search_wrap .search_box .btn {
+        width: 20%;
+    }
+    .grid_layoutDisplay {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+         "jobPosts"
+         "subscribe"
+         "googleAds"
+        ;
+    }
+}
+@media screen and (max-width:720px) { 
+    .form-group-search {
+        padding: 0 10vw;
+    }
+    .form-group-search input[type="search"] {
+        margin-top: 1rem;
+        padding: 2vw;
+    }
+}
+/* WE ARE HIRING PAGE END */
+
+
+/* WE BLOG PAGE END */
+.blog__posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 3vw 4vw;
+}
+.blog__posts h1 {
+    color: var(--FONT-COLOR2);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+/* WE BLOG PAGE END */
 
 
 /* CONTACT US PAGE START */
@@ -939,7 +1232,7 @@ a {
     justify-content: center;
     align-items: center;
     flex: 1;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5,4,46,0.7)), url(../../static/media/bgImages/helpyouu.jpg);
     background-size: cover;
@@ -951,9 +1244,9 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
-    background-color:#f68635;
-    opacity: 0.5;
+    height: 60vh;
+    background-color:var(--FONT-COLOR2);
+    opacity: 0.7;
 }
 .contactUs__Page h1 {
     z-index: 1;

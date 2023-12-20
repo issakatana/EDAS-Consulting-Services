@@ -6,6 +6,81 @@
 
 
 
+<section class="blog__Page">
+    <div class="form-group-search">
+        <label for="jobSearch">Check Out What Is Trending In Our Blog</label>
+        <div class="search_wrap search_wrap_1">
+            <div class="search_box">
+                <input type="text" class="input" placeholder="I am looking for...">
+                <div class="btn btn_common">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Blog Posts Start -->
+<main class="blogs__Main">
+    <section class="blog__posts">
+        <h1>Popular Blogs</h1>
+        <article class="row destinations_row">
+            <div class="destinations_container item_grid">
+                {% if dests %}
+                    <div class="destination_grid">
+                        {% for dest in dests %}
+                            <!-- blogs -->
+                            <div class="destination item">
+                                <div class="destination_image">
+                                    {% if dest.post_image and dest.post_image.url %}
+                                        <img src="{{ dest.post_image.url }}" alt="">
+                                    {% else %}
+                                        <!-- Display a placeholder image or some default image -->
+                                        <img src="../../static/media/bgImages/blog.jpg" alt="Placeholder">
+                                    {% endif %}
+                                    {% if dest.category == "NGO JOBS" %}
+                                        <div class="spec_offer text-center"><a href="#">Trending</a></div>
+                                    {% endif %}
+                                </div>
+                                <div class="destination_content">
+                                    {% if dest.title %}
+                                        <div class="destination_title"><a href="{{ dest.url }}">{{ dest.title }}</a></div>
+                                    {% endif %}
+                                    <div class="destination_subtitle"><p>{{ dest.content }}</p></div>
+                                    <div class="destination_author_date">
+                                        <div class="destination_author">Author: {% if dest.user %}{{ dest.user }}{% else %}Unknown{% endif %}</div>
+                                        <div class="destination_date">Last Updated | {{ dest.pub_date }}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <h3 style="margin-left:30px">There are no updated blog posts available at the moment...</h3>
+                {% endif %}
+            </div>
+        </article>
+    </section>
+
+    <section class="subscribe__jobs">
+        <div class="subscribe__container">
+            <h2>Subscribe to Blog Alert</h2>
+            <p>Join our happy subscribers</p>
+            <input type="email" placeholder="Enter your email here!">
+            <li><a href="">Subscribe</a><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+        </div>
+    </section>
+    
+    <section class="google__ads">
+        <i class="fa fa-angle-left googleAdArrow" aria-hidden="true"></i>
+        <div class="ad-container">
+            <p>Ads by Google</p>
+            <a href="">Stop seeing this ad ?</a>
+        </div>
+    </section>
+</main>
+<!-- Blog Posts End -->
 
 
 <!-- help you start -->
