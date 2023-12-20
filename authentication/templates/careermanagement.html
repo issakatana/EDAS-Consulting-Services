@@ -1,0 +1,118 @@
+{% extends 'authBase.html' %}
+
+{% load static %}
+
+{% block content %}
+
+
+<section class="careerManagement__Page">
+    <h1>Comprehensive Career Management Services</h1>
+</section>
+
+
+<section class="careermanagement__intro">
+    <p>
+        With our comprehensive career management services, you can take control of your professional trajectory and make informed decisions that align with your aspirations. Let us support you in achieving your career goals and unlocking your full potential.
+        We are passionate about professionals aiming to grow up the ladder in their career journey. We have a great package for this category.
+    </p>
+</section>
+
+
+<section class="careerManagement">
+    <h1>Our Career Management</h1>
+    <div class="careerManagement_contents">
+        <div class="aspirational-statement">
+            <div class="service_item text1">
+                <h2>Cover Letter Drafting and Review</h2>
+                <p>A well-written cover letter can greatly enhance your chances of landing your dream job. Our professionals will assist you in crafting personalized cover letters that effectively communicate your motivations and qualifications, increasing your chances of being called for an interview.</p>
+                <p>Our expert team of career specialists will work closely with you to create a compelling and impactful curriculum vitae (CV) that highlights your skills, experiences, and achievements. We understand the importance of a well-crafted CV in capturing the attention of potential employers and will ensure that yours stands out from the competition.</p>
+            </div>
+            <figure class="service__image">
+                <img src="../../static/media/bgImages/coverletter.jpg" alt="Processing image">
+            </figure>
+        </div>
+
+        <div class="aspirational-statement">
+            <figure class="service__image grid">
+                <img src="../../static/media/bgImages/gapcoachingreal.jpg" alt="Processing image">
+            </figure>
+            <div class="service service_item text1">
+                <h2>Interview Coaching and Preparation</h2>
+                <p>Preparing for job interviews can be a nerve-wracking experience. Our experienced interview coaches will provide you with the guidance and support needed to excel in your interviews. We will help you develop strong responses to common interview questions, refine your communication skills, and build confidence in your ability to present yourself effectively.</p>
+            </div>
+            <figure class="service__image none">
+                <img src="../../static/media/bgImages/gapcoachingreal.jpg" alt="Processing image">
+            </figure>
+        </div>
+
+        <div class="aspirational-statement">
+            <div class="service service_item text1">
+                <h2>Job Search and Placement</h2>
+                <p>Finding the right job can be a daunting task. Our job search services are designed to streamline the process and connect you with relevant opportunities. We leverage our extensive network and industry expertise to identify suitable job openings that align with your skills and career goals. Our goal is to help you secure a position that matches your aspirations and aspirations.</p>
+            </div>
+            <figure class="service__image">
+                <img src="../../static/media/bgImages/jobsearch.png" alt="Processing image">
+            </figure>
+        </div>
+
+        <div class="aspirational-statement">
+            <figure class="service__image grid">
+                <img src="../../static/media/bgImages/coaching.jpg" alt="Processing image">
+            </figure>
+            <div class="service service_item text1">
+                <h2>Handling Career Gaps</h2>
+                <p>Career gaps can sometimes raise concerns for employers. Our team will assist you in addressing and effectively communicating any career gaps in your professional history. We will help you highlight relevant skills and experiences acquired during these periods, ensuring that potential employers focus on your qualifications rather than the gaps.</p>
+            </div>
+            <figure class="service__image none">
+                <img src="../../static/media/bgImages/coaching.jpg" alt="Processing image">
+            </figure>
+        </div>
+
+        <div class="aspirational-statement">
+            <div class="service service_item text1">
+                <h2>Career Mentorship</h2>
+                <p>Our career mentorship program connects you with seasoned professionals who can provide valuable insights and guidance throughout your career journey. Whether you need advice on career decisions, professional development, or navigating workplace challenges, our mentors are here to support and empower you.</p>
+            </div>
+            <figure class="service__image">
+                <img src="../../static/media/bgImages/mentoring.png" alt="Processing image">
+            </figure>
+        </div>
+
+        <div class="aspirational-statement">
+            <figure class="service__image grid">
+                <img src="../../static/media/bgImages/linkin.png" alt="Processing image">
+            </figure>
+            <div class="service service_item text1">
+                <h2>Personal Branding, LinkedIn Optimization, and Digital Presence</h2>
+                <p>In today's digital age, personal branding and a strong online presence are essential. Our experts will help you develop a compelling personal brand that showcases your unique value proposition. We will optimize your LinkedIn profile, craft engaging social media profiles, and provide strategies for leveraging digital platforms to enhance your professional reputation.</p>
+            </div>
+            <figure class="service__image none">
+                <img src="../../static/media/bgImages/linkin.png" alt="Processing image">
+            </figure>
+        </div>
+
+        <div class="aspirational-statement">
+            <div class="service service_item text1">
+                <h2>Professional Networking</h2>
+                <p>Building a robust professional network is crucial for career growth and opportunities. Our networking services provide you with strategies and techniques to expand your network effectively. We will guide you in building meaningful connections, attending industry events, and utilizing online platforms to create valuable relationships.</p>
+            </div>
+            <figure class="service__image">
+                <img src="../../static/media/bgImages/netwokingproff.webp" alt="Processing image">
+            </figure>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- help you start -->
+<section class="help-you">
+    <div class="help-you-content">
+        <h3 class="text-transform">How can we help you?</h3>
+        <div class="contact-us-btn "><a href="{% url 'contact' %}">CONTACT US </a></div>
+    </div>
+</section>
+<!-- help you end -->
+
+
+{% endblock %}

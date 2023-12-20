@@ -29,6 +29,33 @@ def ourservices(request):
     return render(request, 'services.html', context)
 
 
+def careermanagement(request):
+
+    context = {
+        
+    }
+
+    return render(request, 'careermanagement.html', context)
+
+
+def wearehiring(request):
+
+    context = {
+        
+    }
+
+    return render(request, 'wearehiring.html', context)
+
+
+def blog(request):
+
+    context = {
+        
+    }
+
+    return render(request, 'blog.html', context)
+
+
 def contact(request):
 
     context = {
